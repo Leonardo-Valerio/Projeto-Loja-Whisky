@@ -1,0 +1,13 @@
+.bannerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 2vh
+}
+.layoutInicio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}

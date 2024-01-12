@@ -1,0 +1,19 @@
+.banner{
+    background: url('../../../imagens/banner2-whisky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -30px;
+    width: 60vw;
+    height: 45vh;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.banner h1{
+    width: 55%;
+    font-size: 7vh;
+    color: white;
+    margin-left: 2%;
+    font-family:  'EB Garamond', 'serif';
+    font-weight: lighter;
+}

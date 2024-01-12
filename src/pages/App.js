@@ -1,9 +1,10 @@
 import '../App.css';
-import Banner from '../components/atoms/Banner';
-
+import Header from '../components/templates/Header';
 function App() {
   return (
-    <Banner/>
+    <div>
+      <Header/>
+    </div>
   );
 }
 

@@ -1,0 +1,26 @@
+.menuDeOpcoes{
+    width: 100vw;
+    margin-top: 5vh;
+}
+.menuDeOpcoes ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.menuDeOpcoes > ul > li{
+    list-style: none;
+}
+.menuDeOpcoes > ul > li > a{
+    text-decoration: none;
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid #BFB0A3;
+    transition-duration: 0.7s;
+    
+}
+.menuDeOpcoes > ul > li > a:hover{
+    color: #BFB0A3;
+    font-size: 4vh;
+}
