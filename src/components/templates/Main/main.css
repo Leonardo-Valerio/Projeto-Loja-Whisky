@@ -1,0 +1,25 @@
+.principal{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.principal h1{
+    font-family: 'EB Garamond', 'serif';
+    color: #BFB0A3;
+    font-weight:lighter ;
+    font-size: 3vw;
+    border-bottom: 1px solid #8C7B6C;
+}
+.whiskys{
+    width: 80%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cardWhisky{
+    margin-top: 2vh;
+}

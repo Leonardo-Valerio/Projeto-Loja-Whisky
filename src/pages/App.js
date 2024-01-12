@@ -1,10 +1,15 @@
 import '../App.css';
+import { useState } from "react"
 import Header from '../components/templates/Header';
+import Main from '../components/templates/Main';
 function App() {
+  const [whisky, setWhisky] = useState([]);
   return (
-    <div>
+    <body>
+      
       <Header/>
-    </div>
+      <Main whisky={whisky} setWhisky={setWhisky}/>
+    </body>
   );
 }
 
