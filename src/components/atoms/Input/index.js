@@ -1,8 +1,9 @@
+import './input.css'
 const Input =(props)=>{
     return(
-        <div>
-            <label>{props.label}</label>
-            <input placeholder={props.placeholder}></input>
+        <div className='divInput'>
+            <label className='etiqueta'>{props.label}</label>
+            <input placeholder={props.placeholder} className='campoTexto'></input>
         </div>
     )
 }

@@ -1,0 +1,13 @@
+.campoTexto{
+    padding: 10px;
+}
+.etiqueta{
+    color: #BFB0A3;
+    margin-bottom: 5px;
+}
+.divInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

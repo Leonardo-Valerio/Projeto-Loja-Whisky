@@ -1,0 +1,31 @@
+.box1{
+    color: #BFB0A3;
+    border-right: 1px solid #BFB0A3;
+    padding-right: 10PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+.all{
+    margin-top: 7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #260101;
+    height: 30vh;
+    
+}
+.box{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 20vh;
+}
+.box2{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

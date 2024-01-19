@@ -1,12 +1,14 @@
+import Button from "../../atoms/Button"
 import Input from "../../atoms/Input"
 
 const Formulario = ()=>{
     return(
-        <div>
+        <>
             <form>
                 <Input label = 'Digite seu e-mail' placeholder='abcd@gmail.com'/>
             </form>
-        </div>
+            <Button>Enviar</Button>
+        </>
     )
 }
 export default Formulario 
