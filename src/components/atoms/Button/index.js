@@ -1,7 +1,7 @@
 import './button.css'
 const Button = (props)=>{
     return(
-        <button>{props.children}</button>
+        <button className='botao'>{props.children}</button>
     )
 }
 export default Button

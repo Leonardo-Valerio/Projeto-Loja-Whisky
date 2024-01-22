@@ -1,4 +1,5 @@
-import { useEffect } from "react"
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { useEffect, useRef } from "react"
 import redLabelImage from '../../../imagens/red-label.png';
 import chivasImage from '../../../imagens/chivas.png';
 import blackLabelImage from '../../../imagens/black-label.jpg';
@@ -7,6 +8,8 @@ import glenfiddichImage from '../../../imagens/glenfiddich.webp';
 import whiteHorseImage from '../../../imagens/whiteHorse.png';
 import jackDaniels from '../../../imagens/jack-daniels.png';
 import ballantines12 from '../../../imagens/ballantines-12.png';
+import buchanans from '../../../imagens/buchanans-12.png'
+import oldParr12 from '../../../imagens/old-parr-12.webp'
 import Card from "../../atoms/Card";
 import './exibirCards.css'
 const ExibirCards=(props)=>{
@@ -76,13 +79,38 @@ const ExibirCards=(props)=>{
                 'idade': 2,
                 'publicada': true,
                 'topico': 'os mais procurados'
+            },
+            {
+                'nome': 'Buchanans 12',
+                'preco': 179.99,
+                'imagem': buchanans,
+                'idade': 12,
+                'publicada': true,
+                'topico': 'os mais procurados'
+            },
+            {
+                'nome': 'Old Parr 12',
+                'preco': 129.99,
+                'imagem': oldParr12,
+                'idade': 12,
+                'publicada': true,
+                'topico': null
             }
         ]);
     }, []);
+    const carousel = useRef(null)
+    const handleForwardClick=(e)=>{
+        e.preventDefault();
+        carousel.current.scrollLeft += carousel.current.offsetWidth
+    }
+    const handleBackClick=(e)=>{
+        e.preventDefault();
+        carousel.current.scrollLeft -= carousel.current.offsetWidth
+    }
     return(
         <>
             <h1>{props.titulo}</h1>
-            <section className="whiskys">
+            <section className="whiskys" ref={carousel}>
                 {props.whisky.map((item,index)=>(
                     props.condicao(item)?(
                         <div className="cardWhisky" key={index}> 
@@ -90,7 +118,17 @@ const ExibirCards=(props)=>{
                         </div>
                     ):null
                 ))}
+                
             </section>
+            <div className='buttonCarousel'>
+                <button onClick={handleBackClick}>
+                    <IoIosArrowBack size={30} color="#BFB0A3" />
+                </button>
+                <button onClick={handleForwardClick}>
+                    <IoIosArrowForward size={30} color="#BFB0A3" />
+                </button>
+            </div>
+            
         </>
     )
 }
