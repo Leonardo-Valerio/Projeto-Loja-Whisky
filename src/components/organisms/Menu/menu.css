@@ -14,7 +14,7 @@
 }
 .menuDeOpcoes > ul > li > a{
     text-decoration: none;
-    font-size: 5vh;
+    font-size: 4vh;
     color: rgb(255, 255, 255);
     border-bottom: 2px solid #BFB0A3;
     transition-duration: 0.7s;
@@ -22,5 +22,30 @@
 }
 .menuDeOpcoes > ul > li > a:hover{
     color: #BFB0A3;
-    font-size: 4vh;
+    font-size: 3.8vh;
 }
+.botaoMenu{
+    color: #BFB0A3;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    
+}
+.boxMenu{
+    text-align: center;
+}
+@media (max-width: 900px) {
+   .menuDeOpcoes ul{
+        flex-direction: column;
+   }
+   .menuDeOpcoes{
+        margin-top: 1vh;
+    }
+    .menuDeOpcoes > ul > li > a{
+        font-size: 3vh;
+    }
+    .menuDeOpcoes > ul > li > a:hover{
+        font-size: 2.8vh;
+    }
+    
+  }

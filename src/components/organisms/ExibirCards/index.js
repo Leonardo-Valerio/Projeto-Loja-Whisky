@@ -10,6 +10,8 @@ import jackDaniels from '../../../imagens/jack-daniels.png';
 import ballantines12 from '../../../imagens/ballantines-12.png';
 import buchanans from '../../../imagens/buchanans-12.png'
 import oldParr12 from '../../../imagens/old-parr-12.webp'
+import greenLabelImage from '../../../imagens/green-label.jpg';
+import macallan12Image from '../../../imagens/macallan-12.png'
 import Card from "../../atoms/Card";
 import './exibirCards.css'
 const ExibirCards=(props)=>{
@@ -76,7 +78,7 @@ const ExibirCards=(props)=>{
                 'nome': 'Jack Daniels',
                 'preco': 169.99,
                 'imagem': jackDaniels,
-                'idade': 2,
+                'idade': 8,
                 'publicada': true,
                 'topico': 'os mais procurados'
             },
@@ -95,6 +97,22 @@ const ExibirCards=(props)=>{
                 'idade': 12,
                 'publicada': true,
                 'topico': null
+            },
+            {
+                'nome': 'Green Label',
+                'preco': 459.99,
+                'imagem': greenLabelImage,
+                'idade': 15,
+                'publicada': true,
+                'topico': 'os mais procurados'
+            },
+            {
+                'nome': 'Macallan 12',
+                'preco': 789.99,
+                'imagem': macallan12Image,
+                'idade': 12,
+                'publicada': true,
+                'topico': null
             }
         ]);
     }, []);
@@ -109,7 +127,7 @@ const ExibirCards=(props)=>{
     }
     return(
         <>
-            <h1>{props.titulo}</h1>
+            <h1 className='tituloTopico'>{props.titulo}</h1>
             <section className="whiskys" ref={carousel}>
                 {props.whisky.map((item,index)=>(
                     props.condicao(item)?(

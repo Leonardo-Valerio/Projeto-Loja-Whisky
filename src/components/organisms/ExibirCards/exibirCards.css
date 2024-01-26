@@ -1,10 +1,11 @@
 
-h1{
+.tituloTopico{
     font-family: 'EB Garamond', 'serif';
     color: #BFB0A3;
     font-weight:lighter ;
-    font-size: 3vw;
+    font-size: 4vh;
     border-bottom: 1px solid #8C7B6C;
+    margin-top: 3vw;
 }
 .whiskys{
     width: 80%;
@@ -35,4 +36,11 @@ h1{
     background-color: transparent;
     cursor: pointer;
     transition-duration: 0.5s;
+}
+@media (max-width: 760px) {
+    h1{
+        font-size: 3vh;
+    }
+
+    
 }

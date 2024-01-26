@@ -2,7 +2,7 @@
     height: 40vh;
     background-color: #BFB0A3;
     border-radius: 10px;
-    width: 15vw;
+    min-width: 28vh;
     display: flex;
     justify-content: center;
     flex-direction:column ;
@@ -10,12 +10,32 @@
     transition-duration: 0.5s;
 }
 .divImg{
-    
+
     height: 65%;
-    width: 80%;
+    width: 95%;
+}
+.infos{
+    width: 90%;
+    margin-top: 10px;
+}
+.infos h2,h3{
+    font-size: 100%;
+    text-align: center;
 }
 .card:hover{
     cursor: pointer;
     background-color: #8C7B6C;
     border-radius: 15px;
+}
+@media (max-width: 900px) {
+
+    .card{
+        width: 20vh;
+        height: 40vh;
+    }
+    .divImg{
+        width: 100%;
+    }
+    
+
 }

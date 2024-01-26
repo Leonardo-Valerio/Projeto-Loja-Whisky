@@ -17,7 +17,8 @@
     
 }
 .box{
-    width: 60vw;
+    min-width: 60vw;
+    max-width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: center;

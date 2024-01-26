@@ -4,16 +4,24 @@
     background-repeat: no-repeat;
     background-position: center -30px;
     width: 60vw;
-    height: 45vh;
+    min-height: 45vh;
     border-radius: 15px;
     display: flex;
     align-items: center;
 }
 .banner h1{
-    width: 55%;
+    max-width: 55%;
     font-size: 7vh;
     color: white;
     margin-left: 2%;
     font-family:  'EB Garamond', 'serif';
     font-weight: lighter;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    .banner h1{
+        font-size: 6vw;
+    }
+
 }
