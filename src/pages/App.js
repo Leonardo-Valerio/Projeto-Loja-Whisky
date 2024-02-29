@@ -1,17 +1,26 @@
 import '../App.css';
-import { useState } from "react"
-import Header from '../components/templates/Header';
-import Main from '../components/templates/Main';
-import Footer from '../components/templates/Footer';
+import Header from 'components/templates/Header';
+import Main from 'components/templates/Main';
+import Footer from 'components/templates/Footer';
+import Sobre from 'components/templates/Sobre';
+import{BrowserRouter, Route, Routes} from "react-router-dom";
 function App() {
   
   return (
-    <body>
+    <BrowserRouter>
+      <body>
       
-      <Header/>
-      <Main/>
-      <Footer/>
-    </body>
+        <Header/>
+      
+          <Routes>
+            <Route path='/' element={<Main/>}/>
+            <Route path='sobre' element={<Sobre/>}/>
+          </Routes>
+      
+      
+        <Footer/>
+      </body>
+    </BrowserRouter>
   );
 }
 

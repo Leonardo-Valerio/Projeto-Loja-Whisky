@@ -1,5 +1,5 @@
-import Button from "../../atoms/Button"
-import Input from "../../atoms/Input"
+import Button from "components/atoms/Button"
+import Input from "components/atoms/Input"
 
 const Formulario = ()=>{
     return(

@@ -1,7 +1,7 @@
 import {useState } from "react"
 
 import './main.css'
-import ExibirCards from "../../organisms/ExibirCards";
+import ExibirCards from "components/organisms/ExibirCards";
 
 const Main=()=>{
     const [whisky, setWhisky] = useState([]);

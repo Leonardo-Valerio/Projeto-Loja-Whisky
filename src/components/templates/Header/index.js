@@ -1,5 +1,5 @@
-import Banner from "../../atoms/Banner"
-import Menu from "../../organisms/Menu"
+import Banner from "components/atoms/Banner"
+import Menu from "components/organisms/Menu"
 import './header.css'
 const Header = ()=>{
     return(

@@ -16,13 +16,15 @@
     text-decoration: none;
     font-size: 4vh;
     color: rgb(255, 255, 255);
-    border-bottom: 2px solid #BFB0A3;
     transition-duration: 0.7s;
     
 }
 .menuDeOpcoes > ul > li > a:hover{
     color: #BFB0A3;
     font-size: 3.8vh;
+}
+.menuDestaque{
+    border-bottom: 2px solid #BFB0A3;
 }
 .botaoMenu{
     color: #BFB0A3;
@@ -46,6 +48,9 @@
     }
     .menuDeOpcoes > ul > li > a:hover{
         font-size: 2.8vh;
+    }
+    .menuDestaque{
+        border-bottom: 2px solid #BFB0A3;
     }
     
   }

@@ -1,4 +1,4 @@
-import Formulario from "../../molecules/Formulario"
+import Formulario from "components/molecules/Formulario"
 import './footer.css'
 const Footer = ()=>{
     return(
