@@ -18,7 +18,8 @@ export const whiskyList = [
         "imagem": redLabelImage,
         "idade": 12,
         "publicada": true,
-        "topico": "os mais procurados"
+        "topico": "os mais procurados",
+        'descricao':null
     },
     {
         "nome": "Chivas Regal 12",
@@ -26,7 +27,8 @@ export const whiskyList = [
         "imagem": chivasImage,
         "idade": 12,
         "publicada": true,
-        "topico": "os mais procurados"
+        "topico": "os mais procurados",
+        'descricao':null
     },
     {
         'nome': 'Black Label',
@@ -34,7 +36,8 @@ export const whiskyList = [
         'imagem': blackLabelImage,
         'idade': 21,
         'publicada': true,
-        'topico': 'os mais procurados'
+        'topico': 'os mais procurados',
+        'descricao':"O Black Label, uma obra-prima da destilaria escocesa, emerge como uma joia nas terras altas do país. Nascido sob a assinatura da Johnnie Walker, este blended Scotch whisky transcende eras, desde sua criação até os dias de hoje. Com uma fusão magistral de maltes envelhecidos e grãos selecionados, o Black Label personifica a tradição escocesa, destilada em barris de carvalho para alcançar a perfeição. Desde os salões elegantes da Belle Époque até os cenários modernos, o Black Label permanece um ícone do whisky, cativando paladares com suas notas equilibradas e profundas. Um tributo à maestria do mestre destilador, cada gole é uma jornada sensorial, uma experiência única no mundo do Scotch whisky."
     },
     {
         'nome': 'Ballantines 08',
@@ -42,7 +45,8 @@ export const whiskyList = [
         'imagem': ballantinesImage,
         'idade': 8,
         'publicada': true,
-        'topico': 'os mais procurados'
+        'topico': 'os mais procurados',
+        'descricao':null
     },
     {
         'nome': 'Ballantines 12',
@@ -50,7 +54,8 @@ export const whiskyList = [
         'imagem': ballantines12,
         'idade':12,
         'publicada':true,
-        'topico': null 
+        'topico': null,
+        'descricao':null
     },
     {
         'nome': 'Glenfiddich 12',
@@ -58,7 +63,8 @@ export const whiskyList = [
         'imagem': glenfiddichImage,
         'idade': 12,
         'publicada': true,
-        'topico': null
+        'topico': null,
+        'descricao':null
     },
     {
         'nome': 'White Horse',
@@ -66,7 +72,8 @@ export const whiskyList = [
         'imagem': whiteHorseImage,
         'idade': 21,
         'publicada': true,
-        'topico': null
+        'topico': null,
+        'descricao':null
     },
     {
         'nome': 'Jack Daniels',
@@ -74,7 +81,8 @@ export const whiskyList = [
         'imagem': jackDaniels,
         'idade': 8,
         'publicada': true,
-        'topico': 'os mais procurados'
+        'topico': 'os mais procurados',
+        'descricao':null
     },
     {
         'nome': 'Buchanans 12',
@@ -82,7 +90,8 @@ export const whiskyList = [
         'imagem': buchanans,
         'idade': 12,
         'publicada': true,
-        'topico': 'os mais procurados'
+        'topico': 'os mais procurados',
+        'descricao':null
     },
     {
         'nome': 'Old Parr 12',
@@ -90,7 +99,8 @@ export const whiskyList = [
         'imagem': oldParr12,
         'idade': 12,
         'publicada': true,
-        'topico': null
+        'topico': null,
+        'descricao':null
     },
     {
         'nome': 'Green Label',
@@ -98,7 +108,8 @@ export const whiskyList = [
         'imagem': greenLabelImage,
         'idade': 15,
         'publicada': true,
-        'topico': 'os mais procurados'
+        'topico': 'os mais procurados',
+        'descricao':null
     },
     {
         'nome': 'Macallan 12',
@@ -106,6 +117,7 @@ export const whiskyList = [
         'imagem': macallan12Image,
         'idade': 12,
         'publicada': true,
-        'topico': null
+        'topico': null,
+        'descricao':"O Macallan, uma jóia da destilaria escocesa, tem suas raízes nas terras férteis de Craigellachie. Nascido em 1824, durante a efervescência da Revolução Industrial, este single malt viu o mundo mudar ao longo dos séculos. No auge da elegância vitoriana, tornou-se a escolha de lordes e damas em suntuosos salões. Com origens profundamente enraizadas nas Highlands da Escócia, o Macallan é destilado com maestria, amadurecendo em barris de carvalho selecionados. Suas ricas notas de frutas secas e carvalho exalam a tradição escocesa. Hoje, é mais do que um whisky; é uma expressão viva da maestria destilatória, elevando os sentidos a cada gole."
     }
 ]

@@ -1,0 +1,53 @@
+.main-sobre-nos{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vh;
+}
+.sobre-nos{
+    width: 90vw;
+}
+.sobre-nos p{
+    color: #BFB0A3;
+    font-family:  'EB Garamond', 'serif';
+    font-size: 2vw;
+    text-indent: 20px;
+    line-height: 4vw;
+
+}
+
+.imagem-garrafa{
+    width: 40vw;
+    height: 30vw ;
+    border-right: 1px solid #BFB0A3;
+}
+
+.descricao-garrafa{
+    color: white;
+    width: 40vw;
+    height: 30vh ;
+    line-height: 5vh;
+    font-size: 3vh;
+}
+
+.historias-whisky{
+    width: 90vw;
+    margin-top: 10vw;
+}
+
+.garrafa-container{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nome-garrafa{
+    color: #BFB0A3;
+    font-family:'EB Garamond', 'serif';
+    font-size: 4vw;
+    font-weight: lighter;
+}
