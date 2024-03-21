@@ -17,7 +17,7 @@ const Sobre = ()=>{
                     <>
                     <h2 className='nome-garrafa'>{garrafa.nome}</h2>
                     <div key={index} className='garrafa-container'>
-                        <div className='imagem-garrafa' style={{ background: `url(${garrafa.imagem})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}></div>
+                        <div className='imagem-garrafa' style={{ background: `url(${garrafa.imagem})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
                         <div className='descricao-garrafa'>{garrafa.descricao}</div>
                 </div>
                 </>
