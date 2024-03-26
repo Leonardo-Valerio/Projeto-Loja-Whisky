@@ -4,6 +4,8 @@ import Main from 'components/templates/Main';
 import Footer from 'components/templates/Footer';
 import Sobre from 'components/templates/Sobre';
 import{BrowserRouter, Route, Routes} from "react-router-dom";
+import Teste from 'components/templates/MainBebida';
+
 function App() {
   
   return (
@@ -15,6 +17,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Main/>}/>
             <Route path='sobre' element={<Sobre/>}/>
+            <Route path='teste/:id'element={<Teste/>}/>
           </Routes>
       
       
