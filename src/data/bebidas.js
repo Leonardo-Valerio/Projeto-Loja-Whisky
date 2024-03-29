@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import redLabelImage from 'imagens/red-label.png';
 import chivasImage from 'imagens/chivas.png';
 import blackLabelImage from 'imagens/black-label.jpg';
@@ -13,6 +14,7 @@ import macallan12Image from 'imagens/macallan-12.png'
 
 export const whiskyList = [
     {
+        'id': uuidv4(),
         "nome": "Red Label",
         "preco": 109.99,
         "imagem": redLabelImage,
@@ -22,6 +24,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         "nome": "Chivas Regal 12",
         "preco": 119.99,
         "imagem": chivasImage,
@@ -31,6 +34,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         'nome': 'Black Label',
         'preco': 209.99,
         'imagem': blackLabelImage,
@@ -40,6 +44,7 @@ export const whiskyList = [
         'descricao':"O Black Label, uma obra-prima da destilaria escocesa, emerge como uma joia nas terras altas do país. Nascido sob a assinatura da Johnnie Walker, este blended Scotch whisky transcende eras, desde sua criação até os dias de hoje. Com uma fusão magistral de maltes envelhecidos e grãos selecionados, o Black Label personifica a tradição escocesa, destilada em barris de carvalho para alcançar a perfeição. Desde os salões elegantes da Belle Époque até os cenários modernos, o Black Label permanece um ícone do whisky, cativando paladares com suas notas equilibradas e profundas. Um tributo à maestria do mestre destilador, cada gole é uma jornada sensorial, uma experiência única no mundo do Scotch whisky."
     },
     {
+        'id': uuidv4(),
         'nome': 'Ballantines 08',
         'preco': 89.99,
         'imagem': ballantinesImage,
@@ -49,6 +54,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         'nome': 'Ballantines 12',
         'preco': 159.99,
         'imagem': ballantines12,
@@ -58,6 +64,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         'nome': 'Glenfiddich 12',
         'preco': 179.99,
         'imagem': glenfiddichImage,
@@ -76,6 +83,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         'nome': 'Jack Daniels',
         'preco': 169.99,
         'imagem': jackDaniels,
@@ -85,6 +93,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         'nome': 'Buchanans 12',
         'preco': 179.99,
         'imagem': buchanans,
@@ -94,6 +103,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         'nome': 'Old Parr 12',
         'preco': 129.99,
         'imagem': oldParr12,
@@ -112,6 +122,7 @@ export const whiskyList = [
         'descricao':null
     },
     {
+        'id': uuidv4(),
         'nome': 'Macallan 12',
         'preco': 789.99,
         'imagem': macallan12Image,

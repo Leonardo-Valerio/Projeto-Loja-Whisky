@@ -25,7 +25,7 @@ const ExibirCards=(props)=>{
                 {props.whisky.map((item,index)=>(
                     props.condicao(item)?(
                         <div className="cardWhisky" key={index}> 
-                            <Card  nome={item.nome} preco={item.preco} imagem={item.imagem}/>
+                            <Card id={item.id} nome={item.nome} preco={item.preco} imagem={item.imagem}/>
                         </div>
                     ):null
                 ))}
