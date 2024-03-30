@@ -3,7 +3,7 @@ const Input =(props)=>{
     return(
         <div className='divInput'>
             <label className='etiqueta'>{props.label}</label>
-            <input placeholder={props.placeholder} className='campoTexto'></input>
+            <input type={props.tipo} placeholder={props.placeholder} className='campoTexto' value={props.valor} onChange={props.aoMudar}></input>
         </div>
     )
 }

@@ -4,7 +4,8 @@ import Main from 'components/templates/Main';
 import Footer from 'components/templates/Footer';
 import Sobre from 'components/templates/Sobre';
 import{BrowserRouter, Route, Routes} from "react-router-dom";
-import Teste from 'components/templates/MainBebida';
+import Garrafa from 'components/templates/MainBebida';
+import MainCarrinho from 'components/templates/MainCarrinho';
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Main/>}/>
             <Route path='sobre' element={<Sobre/>}/>
-            <Route path='teste/:id'element={<Teste/>}/>
+            <Route path='garrafa/:id'element={<Garrafa/>}/>
+            <Route path='carrinho' element={<MainCarrinho/>} />
           </Routes>
       
       

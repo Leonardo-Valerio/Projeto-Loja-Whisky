@@ -2,7 +2,7 @@ import './card.css'
 import { Link } from 'react-router-dom';
 const Card = (props)=>{
     return(
-        <Link className='cardLink' to={`/teste/${props.id}`}>
+        <Link className='cardLink' to={`/garrafa/${props.id}`}>
             <div className="card">
                 <div className="divImg" style={{ background: `url(${props.imagem})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
                 </div>

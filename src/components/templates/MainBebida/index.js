@@ -2,13 +2,22 @@ import { useParams } from "react-router-dom"
 import { whiskyList } from 'data/bebidas';
 import Button from "components/atoms/Button";
 import './mainBebida.css'
+import Input from "components/atoms/Input";
+import { useState } from "react";
 
-const Teste = ()=>{
+const Garrafa = ()=>{
     const referencia = useParams();
    
     const garrafa = whiskyList.find((whisky)=>{
         return whisky.id === referencia.id
     })
+
+    const [numero, setNumero] = useState(1)
+
+   const aoEnviar =(e)=>{
+    e.preventDefault()
+    console.log(garrafa)
+   }
     
     return(
         <main className="mainGarrafa">
@@ -17,11 +26,15 @@ const Teste = ()=>{
                 <div className="garrafa-info">
                     <h1>{garrafa.nome}</h1>
                     <h2>R$ {garrafa.preco}</h2>
-                    <Button>Adicionar ao carrinho</Button>
+                    <form onSubmit={aoEnviar}>
+                        <Input valor = {numero}  tipo = 'number' label = 'Quantidade' aoMudar = {(e)=>setNumero(e.target.value)}></Input>
+                        <Button>Adicionar ao carrinho</Button>
+                    </form>
+                    
                 </div>
             </section>
         </main>
     )
 }
 
-export default Teste
+export default Garrafa
