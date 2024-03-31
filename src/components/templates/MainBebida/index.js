@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import {  useParams } from "react-router-dom"
 import { whiskyList } from 'data/bebidas';
 import Button from "components/atoms/Button";
 import './mainBebida.css'
@@ -19,6 +19,14 @@ const Garrafa = ()=>{
     console.log(garrafa)
    }
     
+
+
+   const handleClick = (e)=>{
+    e.preventDefault()
+    console.log("Indo para carrinho")
+    
+    
+   }
     return(
         <main className="mainGarrafa">
             <section className="garrafa">
@@ -28,7 +36,7 @@ const Garrafa = ()=>{
                     <h2>R$ {garrafa.preco}</h2>
                     <form onSubmit={aoEnviar}>
                         <Input valor = {numero}  tipo = 'number' label = 'Quantidade' aoMudar = {(e)=>setNumero(e.target.value)}></Input>
-                        <Button>Adicionar ao carrinho</Button>
+                        <Button aoClicar={handleClick}>Adicionar ao carrinho</Button>
                     </form>
                     
                 </div>
