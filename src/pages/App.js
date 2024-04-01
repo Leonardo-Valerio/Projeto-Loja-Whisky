@@ -6,6 +6,7 @@ import Sobre from 'components/templates/Sobre';
 import{BrowserRouter, Route, Routes} from "react-router-dom";
 import Garrafa from 'components/templates/MainBebida';
 import MainCarrinho from 'components/templates/MainCarrinho';
+import MainFormCadastro from 'components/templates/Main/MainFormCadastro';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
             <Route path='sobre' element={<Sobre/>}/>
             <Route path='garrafa/:id'element={<Garrafa/>}/>
             <Route path='carrinho' element={<MainCarrinho/>} />
+            <Route path='cadastro' element={<MainFormCadastro/>} />
           </Routes>
       
       
