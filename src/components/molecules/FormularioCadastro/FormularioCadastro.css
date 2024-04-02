@@ -1,0 +1,27 @@
+.box-form{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.form-cadastro{
+    display: flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 70%;
+
+}
+.box-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    height: 80%;
+    
+}
